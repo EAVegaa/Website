@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Proyecto Huella de carbono</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <a href="#"><span><i class="fa-solid fa-arrows-split-up-and-left"></i>CO2</span></a>
+            </div>
+            <ul>
+                <li><a href="Calculadora/index.html">Calculadora</a></li>
+                <li><a href="Information/Index.html">Productos</a></li>
+            </ul>
+            <div class="toggle">
+                <i class="bx bx-list-ul bx-md"></i>
+            </div>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="content">
+            <h1>POR UN ESTILO DE VIDA RESPONSABLE</h1>
+        </div>
+        <div class="image">
+            <img src="IMG/header3.png" alt="">
+        </div>
+    </div>
+
+    <script>
+
+        let toggle = document.querySelector(".toggle");
+        let navbar = document.querySelector("nav ul");
+
+        toggle.onclick = () => {
+            navbar.classList.toggle("show");
+        }
+
+    </script>
+
+    <section class="carbonfootprint" id="cf">
+        <h1>
+            ¿QUE ES LA HUELLA DE CARBONO?
+        </h1>
+
+        <div class="contenedor">
+
+            <div class="text">
+                La huella de carbono es la medida total de gases de efecto invernadero, principalmente dióxido de
+                carbono, que se emiten directa o indirectamente como resultado de las actividades humanas,
+                como la producción y el consumo de bienes y servicios. Esta huella afecta al cambio climático al
+                contribuir al aumento de la concentración de gases de efecto invernadero en la atmósfera, lo que provoca
+                el calentamiento global y altera los patrones climáticos. A medida que más actividades humanas generan
+                emisiones, se intensifican los efectos del cambio climático, como fenómenos meteorológicos extremos,
+                aumento del nivel del mar y pérdida de biodiversidad, amenazando así la estabilidad de los ecosistemas y
+                la vida en el planeta.
+            </div>
+
+            <div class="video">
+                <video src="VID/AwarenessVideo.mp4" width="540px" autoplay controls muted loop></video>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="service-section">
+        <div class="service-container">
+            <div class="cards-container">
+                <a href="Calculadora/index.html" class="card">
+                    <i class='bx bx-calculator'></i>
+                    <h2>Calculadora</h2>
+                    <p>Calcula tu huella de carbono</p>
+                </a>
+
+                <a href="Information/Index.html" class="card">
+                    <i class='bx bx-info-square'></i>
+                    <h2>Información</h2>
+                    <p>Encuentra más información sobre los productos que consumes</p>
+                </a>
+            </div>
+
+            <div class="image-container">
+                <img src="IMG/Infografia.webp" alt="6 formas fáciles de reducir tu huella de carbono"
+                    class="infographic-image" />
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container_f">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Colegio Militarizado Mariano Escobedo</h4>
+                    <ul>
+                        <li><a href="https://www.nl.gob.mx/es/colegiomilitarizado">Colegio Militarizado</a></li>
+                        <li><a href="https://retys.nl.gob.mx/servicios/servicio-de-educacion-media-superior">Servicio de
+                                Educacion Media Superior</a></li>
+                        <li><a href="https://retys.nl.gob.mx/servicios/servicio-de-educacion-superior">Servicio de
+                                Educacion Superior</a></li>
+                        <li><a href="https://retys.nl.gob.mx/servicios/dependencias?title=&field_dependencia_tid=3738">Tramites
+                                y Servicios</a></li>
+                    </ul>
+                </div>
+                
+
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                        <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
